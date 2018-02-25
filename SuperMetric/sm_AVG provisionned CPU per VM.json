@@ -1,0 +1,1 @@
+{"18a69c4d-3f79-45e8-9095-ffd1591cad0f":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"AVG provisionned CPU per VM","formula":"${this, metric=summary|number_running_vcpus}/${this, metric=summary|number_running_vms}","description":""}}

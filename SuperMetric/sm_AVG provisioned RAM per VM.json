@@ -1,0 +1,1 @@
+{"9ad26ef1-a957-48d8-9e6d-e43e56bb0c6d":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"AVG provisioned RAM per VM","formula":"avg(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=mem|actual.capacity.normalized, depth=2})/1024/1024","description":""}}

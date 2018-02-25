@@ -1,0 +1,1 @@
+{"c600441e-b23d-481c-942d-4a38b4bbd704":{"resourceKinds":[{"resourceKindKey":"HostSystem","adapterKindKey":"VMWARE"},{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"TPS Efficiency (%)","formula":"(${this, metric=mem|shared_average}/sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=mem|guest_provisioned, depth=2}))*100","description":""}}

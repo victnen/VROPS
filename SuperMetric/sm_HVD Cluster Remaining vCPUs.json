@@ -1,0 +1,1 @@
+{"52392679-6891-4c96-8df6-c8f3ac11f048":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"HVD Cluster Remaining vCPUs","formula":"(sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=cpu|corecount_provisioned, depth=2})*(50-${this, metric=cpu|workload}))/${this, metric=cpu|workload}","description":""}}

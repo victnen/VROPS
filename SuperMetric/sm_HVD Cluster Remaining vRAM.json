@@ -1,0 +1,1 @@
+{"cf5d936c-66aa-4b2f-a2b1-21eca0314c00":{"resourceKinds":[{"resourceKindKey":"ClusterComputeResource","adapterKindKey":"VMWARE"}],"name":"HVD Cluster Remaining vRAM","formula":"((sum(${adaptertype=VMWARE, objecttype=VirtualMachine, metric=mem|guest_provisioned, depth=2})*(50-${this, metric=mem|workload}))/${this, metric=mem|workload})/1024/1024","description":""}}
